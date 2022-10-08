@@ -32,8 +32,8 @@ DWORD get_proc_id(const char* proc_name)
 int main()
 {
     char szPath[MAX_PATH];
-    GetFullPathName("darwin.dll", MAX_PATH, szPath, NULL); // Название вашей DLL
-    const char* proc_name = "csgo.exe"; // Процесс игры
+    GetFullPathName("SemenaCheat.dll", MAX_PATH, szPath, NULL); // ГЌГ Г§ГўГ Г­ГЁГҐ ГўГ ГёГҐГ© DLL
+    const char* proc_name = "csgo.exe"; // ГЏГ°Г®Г¶ГҐГ±Г± ГЁГЈГ°Г»
     DWORD proc_id = 0;
 
     while (!proc_id)
@@ -63,7 +63,7 @@ int main()
 
     if (h_proc) CloseHandle(h_proc);
 
-    std::cout << "[+] Darwin Injected Successfulled!" << std::endl;
+    std::cout << "[+] Cheat injected Successfulled!" << std::endl;
     Sleep(3000);
     return 0;
 }
